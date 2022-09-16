@@ -24,7 +24,7 @@
     overflow: visible;
     grid-template-rows: [header-start] 4rem/* 4rem is the vertical height from the top */
     [sidebar-start] 1rem/* don't change this, vertical space from header */
-    [content-start] minmax(33rem, max-content)/* this sets the height of the main body cell */
+    [content-start] minmax(50rem, max-content)/* this sets the height of the main body cell */
     [footer-start] 3rem [footer-end];
     grid-template-columns: [sidebar-start] 12rem/* this is the width of the sidebar div */
     [content-start] 1fr [content-end];
@@ -73,7 +73,7 @@
 
 .footer {
     grid-column: sidebar-start / content-end;
-    background-color: rgba(198, 174, 150, 0.47);
+    background-color: rgba(198, 174, 150, 0.6);
     color: #fff;
     text-align: center;
 }
