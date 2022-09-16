@@ -1,103 +1,110 @@
-.background-image { /* IMG: CJ walks on sand dune, blue sky */
-  z-index: 1;
-  background-color: rgb(198, 174, 150);
-  background-image: url('images/IMG-CJFranceDunes960x640.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: absolute;
-  top: 0;
-  left: 0;
+.background-image {
+    /* IMG: CJ walks on sand dune, blue sky */
+    z-index: 1;
+    background-color: rgb(198, 174, 150);
+    background-image: url('images/IMG-CJFranceDunes960x640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.container { /* This holds all divs on the page */
-  z-index: 2; /* The container is in front of the image */
-  display: grid;
-  gap: 5px;
-  width: 100%; /* I set this as 100% to fill different screens */
-  height: 100%;
-  grid-template-rows:
-    [header-start] 4rem /* 4rem is the vertical height from the top */
-    [sidebar-start] 1rem /* don't change this, vertical space from header */
-    [content-start] 35rem /* this sets the height of the main body cell */
-    [footer-start] 3rem
-    [footer-end];
-  grid-template-columns: 
-    [sidebar-start] 12rem /* this is the width of the sidebar div */
-    [content-start] 1fr
-    [content-end];
-  z-index: 2;
+.container {
+    /* This holds all divs on the page */
+    z-index: 2;
+    /* The container is in front of the image */
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    /* I set this as 100% to fill different screens */
+    height: 100%;
+    grid-template-rows: [header-start] 4rem/* 4rem is the vertical height from the top */
+    [sidebar-start] 1rem/* don't change this, vertical space from header */
+    [content-start] auto/* this sets the height of the main body cell */
+    [footer-start] 3rem [footer-end];
+    grid-template-columns: [sidebar-start] 12rem/* this is the width of the sidebar div */
+    [content-start] 1fr [content-end];
+    z-index: 2;
 }
 
-.container > div {
-}
+.container>div {}
 
 .header {
-  grid-row: header-start / content-start;
-  grid-column: sidebar-start / content-end;
-  background-color: rgba(86, 133, 177, 0.47);
-  color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24pt;
-  text-align: center;
+    grid-row: header-start / content-start;
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(86, 133, 177, 0.47);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    text-align: center;
 }
 
 .sidebar {
-  background-color: rgba(255, 255, 255, 0.20);
-  column-width: minmax(200px, auto);
-  color: rgb(0, 9, 22);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  text-align: center;
-  left: 200px;
+    background-color: rgba(255, 255, 255, 0.20);
+    column-width: minmax(200px, auto);
+    color: rgb(0, 9, 22);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-align: center;
+    left: 200px;
 }
 
 .content {
-  column-width: minmax(300px, auto);
-  color: rgb(207, 228, 236);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  text-align: left;
+    column-width: minmax(300px, auto);
+    color: rgb(207, 228, 236);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-align: left;
 }
 
 .header {
-  grid-row: header-start / content-start;
-  grid-column: sidebar-start / content-end;
-  background-color: rgba(86, 133, 177, 0.47);
-  color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24pt;
-  text-align: center;
+    grid-row: header-start / content-start;
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(86, 133, 177, 0.47);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    text-align: center;
 }
 
 .footer {
-  grid-column: sidebar-start / content-end;
-  background-color: rgba(198, 174, 150, 0.47);
-  color: #fff;
-  text-align: center;
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(198, 174, 150, 0.47);
+    color: #fff;
+    text-align: center;
 }
 
 h1 {
-  font-family: "Georgia", Times, serif;
-  font-size: 24px;
-  font-style: bold, italic;
+    font-family: "Georgia", Times, serif;
+    font-size: 24px;
+    font-style: bold, italic;
 }
+
 
 /* unvisited link */
+
 a:link {
-  color: white;
+    color: white;
 }
+
 
 /* visited link */
+
 a:visited {
-  color: rgb(207, 228, 236);
+    color: rgb(207, 228, 236);
 }
+
 
 /* mouse over link */
+
 a:hover {
-  color: yellow;
+    color: yellow;
 }
 
+
 /* selected link */
+
 a:active {
-  color: rgb(0, 179, 250);
+    color: rgb(0, 179, 250);
 }
