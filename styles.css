@@ -1,8 +1,8 @@
 .background-image {
     /* IMG: CJ walks on sand dune, blue sky */
     z-index: 1;
-    height: auto;
     overflow: visible;
+    background-size: 100% auto;
     background-color: rgb(198, 174, 150);
     background-image: url('images/IMG-CJFranceDunes960x640.jpg');
     background-repeat: no-repeat;
