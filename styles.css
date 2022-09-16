@@ -18,10 +18,11 @@
     gap: 5px;
     width: 100%;
     /* I set this as 100% to fill different screens */
-    height: 100%;
+    height: auto;
+    overflow: visible;
     grid-template-rows: [header-start] 4rem/* 4rem is the vertical height from the top */
     [sidebar-start] 1rem/* don't change this, vertical space from header */
-    [content-start] auto/* this sets the height of the main body cell */
+    [content-start] minmax(33rem, max-content)/* this sets the height of the main body cell */
     [footer-start] 3rem [footer-end];
     grid-template-columns: [sidebar-start] 12rem/* this is the width of the sidebar div */
     [content-start] 1fr [content-end];
