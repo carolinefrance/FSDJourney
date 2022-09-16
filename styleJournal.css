@@ -1,110 +1,140 @@
 /* styleJournal.css sets the styles for the CJFranceTechJournal.html page */
+
 body {
-  background-color: rgb(86, 133, 177); /* sky blue */
+    background-color: rgb(86, 133, 177);
+    /* sky blue */
 }
 
-.container { /* This holds all divs on the page */
-  display: grid;
-  gap: 5px;
-  width: 100%; /* I set this as 100% to fill different screens */
-  height: 100%;
-  grid-template-rows:
-    [header-start] 1rem /* 4rem is the vertical height from the top */
-    [sidebar-start] 1rem /* don't change this, vertical space from header */
-    [content-start] 33rem /* this sets the height of the main body cell */
-    [footer-start] 6rem
-    [footer-end];
-  grid-template-columns: 
-    [sidebar-start] 12rem /* this is the width of the sidebar div */
-    [content-start] 1fr
-    [content-end];
+.container {
+    /* This holds all divs on the page */
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    /* I set this as 100% to fill different screens */
+    height: auto;
+    overflow: visible;
+    grid-template-rows: [header-start] 1rem/* 4rem is the vertical height from the top */
+    [sidebar-start] 1rem/* don't change this, vertical space from header */
+    [content-start] auto/* this sets the height of the main body cell to fit to contents */
+    [footer-start] 6rem [footer-end];
+    grid-template-columns: [sidebar-start] 12rem/* this is the width of the sidebar div */
+    [content-start] 1fr [content-end];
 }
 
-.container > div {
-}
+.container>div {}
 
 .header {
-  grid-row: header-start / content-start;
-  grid-column: sidebar-start / content-end;
-  background-color: rgba(255, 255, 255. 0.5);
-  color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24pt;
-  text-align: center;
+    grid-row: header-start / content-start;
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(255, 255, 255. 0.5);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    text-align: center;
 }
 
 .sidebar {
-  background-color: rgba(13, 16, 23, 0.2);
-  column-width: minmax(200px, auto);
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  text-align: center;
+    background-color: rgba(13, 16, 23, 0.2);
+    column-width: minmax(200px, auto);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-align: center;
 }
+
+
 /* sidebar link styles */
-a:hover {  /* mouse over link */
-  color: yellow;
+
+a:hover {
+    /* mouse over link */
+    color: yellow;
 }
-a:active {/* selected link */
-  color: rgb(0, 179, 250);
+
+a:active {
+    /* selected link */
+    color: rgb(0, 179, 250);
 }
-a:link {/* unvisited link */
-  color: white;
+
+a:link {
+    /* unvisited link */
+    color: white;
 }
-a:visited {/* visited link */
-  color: rgb(207, 228, 236);
+
+a:visited {
+    /* visited link */
+    color: rgb(207, 228, 236);
 }
 
 .content {
-  column-width: minmax(300px, auto);
-  background-color: white;
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  text-align: left;
+    column-width: minmax(300px, auto);
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-align: left;
 }
+
+
 /* content link styles */
-  a:link.content {/* unvisited link */
-  color: rgb(86, 133, 177);
-  }
-  a:visited.content {/* visited link */
-  color: rgb(49, 77, 102);
-  }
-  a:hover.content {/* mouse over link */
-  color: rgb(111, 169, 224);
-  }
-  a:active.content {/* selected link */
-  color: rgb(86, 133, 177);
-  }
+
+a:link.content {
+    /* unvisited link */
+    color: rgb(86, 133, 177);
+}
+
+a:visited.content {
+    /* visited link */
+    color: rgb(49, 77, 102);
+}
+
+a:hover.content {
+    /* mouse over link */
+    color: rgb(111, 169, 224);
+}
+
+a:active.content {
+    /* selected link */
+    color: rgb(86, 133, 177);
+}
 
 .footer {
-  grid-column: sidebar-start / content-end;
-  background-color: rgba(255, 255, 255. 0.5);
-  color: #fff;
-  text-align: center;
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(255, 255, 255. 0.5);
+    color: #fff;
+    text-align: center;
 }
 
 h1 {
-  font-family: "Georgia", Times, serif;
-  font-size: 24px;
-  font-style: bold, italic;
+    font-family: "Georgia", Times, serif;
+    font-size: 24px;
+    font-style: bold, italic;
 }
 
 h3 {
-  padding-left: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18pt;
+    padding-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
 }
+
 p {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 12pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
 }
+
 li {
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 12pt;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+li2 {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
 }
