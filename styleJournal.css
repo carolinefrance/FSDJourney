@@ -5,6 +5,11 @@ body {
     /* sky blue */
 }
 
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+}
+
 .container {
     /* This holds all divs on the page */
     display: grid;
@@ -74,6 +79,13 @@ a:visited {
     text-align: left;
 }
 
+.footer {
+    grid-column: sidebar-start / content-end;
+    background-color: rgba(255, 255, 255. 0.5);
+    color: #fff;
+    text-align: center;
+}
+
 
 /* content link styles */
 
@@ -95,13 +107,6 @@ a:hover.content {
 a:active.content {
     /* selected link */
     color: rgb(86, 133, 177);
-}
-
-.footer {
-    grid-column: sidebar-start / content-end;
-    background-color: rgba(255, 255, 255. 0.5);
-    color: #fff;
-    text-align: center;
 }
 
 h1 {
