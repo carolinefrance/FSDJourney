@@ -1,142 +1,146 @@
 <!DOCTYPE html>
-<html lang="en”>
+<html lang="en">
 
 <head>
-    <meta http-equiv=" Content-Type " content="text/html; charset=UTF-8 ">
-    <title>CJ France's HTML Refresher</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styleJournal.css"> -->
+    <title>HTML Notes</title>
 </head>
 
 <body>
-    <h1 align="center ">Notes: HTML</h1>
-    <h4 align="center ">Source: I followed the <a href="https://www.w3schools.com/ ">w3schools</a> tutorial on HTML and modified their code to create this page.</h4>
-<!-- TABLE 1: This table is a frame that holds the page content. -->
-<table>
-    <tr>
-        <td width="5% "></td>
-        <td width="90% ">
-
-            <!-- TABLE 2: This table holds my photo, byline, and date. -->
-            <table>
-                <tr>
-                    <td><img src="images/IMG-CJFrance50x50.png " alt="Caroline J. France "></td>
-                    <td>by <a href="https://carolinefrance.github.io/ " alt="Caroline 's Bio on GitHub" target="_blank">Caroline J. France</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">Updated: September 13, 2022
-                    </td>
-                </tr>
-            </table>
-            <!-- END TABLE 2 -->
-
-    <p>The purpose of this page is to show what programmers can do with HTML alone. I purposely did NOT use CSS or JavaScript on this page.</p>
-    
-    <p><strong>Useful Links</strong></p>
-    <ul>
-        <li><a href="https://www.w3schools.com/">W3Schools'</a> tutorial on HTML</li>
-<li><a href="https://www.codecademy.com/learn/learn-html">Codecademy's</a> "Learn HTML" tutorial</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web docs</a>, "HTML: HyperText Markup Language"</li>
-<li><a href="https://stackoverflow.com/questions/tagged/html">Stack Overflow</a> questions tagged as html</li>
-<li>HTML in <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code</a></li>
-</ul>
-
-<p>I write most of my html in the VS Code editor, and the shortcut to automatically enter the html basic tags is <strong>(Ctrl+Shift+X)</strong> and type <strong>html</strong>.<br>Note to self: this text is enclosed in paragraph tags:
-    < p>. I don't have to add a break tag:
-        < br> after paragraphs or headings because the next line of text automatically starts at the line below.</p>
-
-<h3>Image Considerations</h3>
-<ul>
-    <li>Although it is best practice to size images in a program like PhotoShop, image attributes "width" and "height" can be used to modify the size of any image. If I were using CSS, I could set more flexible dimensions to fill differently sized screens
-        (more on that later). </li>
-    <li>I used a <b>relative URL</b> (which has a shorter path than the full link's absolute URL).</li>
-    <li>When I type the name of an image in quotation marks to call the file, I cannot type the file name alone if the html file and image file are not in the same folder (which they usually are not). Instead, I must give the folder (a.k.a. directory) in
-        which the image is located followed by a forward slash.</li>
-    <li>In this case, both my html and image files are located in the same directory, but I created an <b>images subfolder</b>, in which I can place future images. Therefore, I wrote: img src="images/CjFrance.jpeg" for the html document to find the image.</li>
-    <li>Also, I added an "<b>alt</b>" attribute to add text to describe the image. This is because the image might not show up, or a person could use a screen reader to hear what is in the image. Side note: in the future, I will create a specific folder for
-        each site created to better organize my files.</li>
-</ul>
-
-<p>Here's a helpful link to a <a href="https://www.w3schools.com/tags/ref_attributes.asp">list of html attributes</a>. Remember, attributes are like optional fillings inside of a sub sandwich, things like alignment, size, and bacon.
-    <br>Spoiler: many future attributes will be created and managed with CSS. </p>
-<p>Below is an ordered list of what otherwise naked heading tags look like:</p>
-<ol>
-    <li>
-        <h1>h1</h1>
-    </li>
-    <li>
-        <h2>h2</h2>
-    </li>
-    <li>
-        <h3>h3</h3>
-    </li>
-    <li>
-        <h4>h4</h4>
-    </li>
-    <li>
-        <h5>h5</h5>
-    </li>
-    <li>
-        <h6>h6</h6>
-    </li>
-</ol>
-<p>I know... it's unsettling. :-)</p>
-<p>In addition to setting the default language to English in the
-    < html lang="en"> tag, below are some paragraphs that use the language attribute to use additional languages on a webpage. I positioned the content in an old-school, centered table with two rows, three cells across, with text aligned center.</p>
-<p align="center"> Here 's a helpful link that
-    <a href="https://www.w3schools.com/tags/ref_language_codes.asp">lists abbreviations for languages</a>.</p>
-<table align="center" ;="" width="100%">
-    <tbody>
+    <h1 align="center">Notes: HTML</h1>
+    <h4 align="center">Source: I followed the <a href="https://www.w3schools.com/">w3schools</a> tutorial on HTML and modified their code to create this page.</h4>
+    <!-- TABLE 1: This table is a frame that holds the page content. -->
+    <table>
         <tr>
-            <td width="33%" ;="" align="center">
-                <b>Mandarin Chinese, 6 yrs.</b></td>
-            <td width="33% " ;="" align="center">
-                <b>French, 3 yrs.</b>
-            </td>
-            <td width="33% " ;="" align="center">
-                <b>Spanish, 1 yr.</b>
-            </td>
-        </tr>
-        <tr>
-            <td width="33% " ; align="center">
-                <p lang="zh-Hans ">我 &nbsp; 学了 &nbsp; 六 &nbsp; 年 &nbsp; 普通话。<br>Wǒ xuéle liù nián pǔtōnghuà.</p>
-            </td>
-            <td width="33% " ; align="center">
-                <p lang="fr ">J'ai étudié trois ans de français.</p>
-            </td>
-            <td width="33% " ; align="center">
-                <p lang="es ">Estudié tres semestres de español.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<p>Note, if you write Chinese characters and want to separate words, hitting the space bar will not work.
-    <br>However, ye olde nonbreaking space (&amp; + nbsp + ;) still works in this circumstance.</p>
+            <td width="5%"></td>
+            <td width="90%">
+
+                <!-- TABLE 2: This table holds my photo, byline, and date. -->
+                <table>
+                    <tr>
+                        <td><img src="images/IMG-CJFrance50x50.png" alt="Caroline J. France"></td>
+                        <td>by <a href="https://carolinefrance.github.io/" alt="Caroline 's Bio on GitHub" target="_blank">Caroline J. France</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Updated: September 13, 2022
+                        </td>
+                    </tr>
+                </table>
+                <!-- END TABLE 2 -->
+
+                <p>The purpose of this page is to show what programmers can do with HTML alone. I purposely did NOT use CSS or JavaScript on this page.</p>
+
+                <p><strong>Useful Links</strong></p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3Schools'</a> tutorial on HTML</li>
+                    <li><a href="https://www.codecademy.com/learn/learn-html">Codecademy's</a>"Learn HTML" tutorial</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web docs</a>,"HTML: HyperText Markup Language"</li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/html">Stack Overflow</a> questions tagged as html</li>
+                    <li>HTML in <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code</a></li>
+                </ul>
+
+                <p>I write most of my html in the VS Code editor, and the shortcut to automatically enter the html basic tags is <strong>(Ctrl+Shift+X)</strong> and type <strong>html</strong>.<br>Note to self: this text is enclosed in paragraph tags:
+                    < p>. I don't have to add a break tag:
+                        < br> after paragraphs or headings because the next line of text automatically starts at the line below.</p>
+
+                <h3>Image Considerations</h3>
+                <ul>
+                    <li>Although it is best practice to size images in a program like PhotoShop, image attributes"width" and"height" can be used to modify the size of any image. If I were using CSS, I could set more flexible dimensions to fill differently
+                        sized screens (more on that later). </li>
+                    <li>I used a <b>relative URL</b> (which has a shorter path than the full link's absolute URL).</li>
+                    <li>When I type the name of an image in quotation marks to call the file, I cannot type the file name alone if the html file and image file are not in the same folder (which they usually are not). Instead, I must give the folder (a.k.a.
+                        directory) in which the image is located followed by a forward slash.</li>
+                    <li>In this case, both my html and image files are located in the same directory, but I created an <b>images subfolder</b>, in which I can place future images. Therefore, I wrote: img src="images/CjFrance.jpeg" for the html document to
+                        find the image.</li>
+                    <li>Also, I added an"<b>alt</b>" attribute to add text to describe the image. This is because the image might not show up, or a person could use a screen reader to hear what is in the image. Side note: in the future, I will create a specific
+                        folder for each site created to better organize my files.</li>
+                </ul>
+
+                <p>Here's a helpful link to a <a href="https://www.w3schools.com/tags/ref_attributes.asp">list of html attributes</a>. Remember, attributes are like optional fillings inside of a sub sandwich, things like alignment, size, and bacon.
+                    <br>Spoiler: many future attributes will be created and managed with CSS. </p>
+                <p>Below is an ordered list of what otherwise naked heading tags look like:</p>
+                <ol>
+                    <li>
+                        <h1>h1</h1>
+                    </li>
+                    <li>
+                        <h2>h2</h2>
+                    </li>
+                    <li>
+                        <h3>h3</h3>
+                    </li>
+                    <li>
+                        <h4>h4</h4>
+                    </li>
+                    <li>
+                        <h5>h5</h5>
+                    </li>
+                    <li>
+                        <h6>h6</h6>
+                    </li>
+                </ol>
+                <p>I know... it's unsettling. :-)</p>
+                <p>In addition to setting the default language to English in the
+                    < html lang="en"> tag, below are some paragraphs that use the language attribute to use additional languages on a webpage. I positioned the content in an old-school, centered table with two rows, three cells across, with text aligned center.</p>
+                <p align="center"> Here 's a helpful link that
+                    <a href="https://www.w3schools.com/tags/ref_language_codes.asp">lists abbreviations for languages</a>.</p>
+                <table align="center" ;="" width="100%">
+                    <tbody>
+                        <tr>
+                            <td width="33%" ;="" align="center">
+                                <b>Mandarin Chinese, 6 yrs.</b></td>
+                            <td width="33%" ;="" align="center">
+                                <b>French, 3 yrs.</b>
+                            </td>
+                            <td width="33%" ;="" align="center">
+                                <b>Spanish, 1 yr.</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="33%" ; align="center">
+                                <p lang="zh-Hans">我 &nbsp; 学了 &nbsp; 六 &nbsp; 年 &nbsp; 普通话。<br>Wǒ xuéle liù nián pǔtōnghuà.</p>
+                            </td>
+                            <td width="33%" ; align="center">
+                                <p lang="fr">J'ai étudié trois ans de français.</p>
+                            </td>
+                            <td width="33%" ; align="center">
+                                <p lang="es">Estudié tres semestres de español.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Note, if you write Chinese characters and want to separate words, hitting the space bar will not work.
+                    <br>However, ye olde nonbreaking space (&amp; + nbsp + ;) still works in this circumstance.</p>
 
 
-<p align="center">Next, here's an example of an audio file and player:</p>
+                <p align="center">Next, here's an example of an audio file and player:</p>
 
-<p align="center">To hear me read Emily Dickinson's short poem “Hope Is the Thing with Feathers"
-    <br>Click on the play button below (31 seconds).</p>
-<table align="center" ;="" width="100%">
-    <tbody>
-        <tr>
-            <td align="center">
-                <audio controls="">
+                <p align="center">To hear me read Emily Dickinson's short poem “Hope Is the Thing with Feathers"
+                    <br>Click on the play button below (31 seconds).</p>
+                <table align="center" ;="" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <audio controls="">
                     <source src="https://raw.githubusercontent.com/carolinefrance/FSDJourney/AUDIOHopeIsTheThingWithFeathers.m4a" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="center">Note to self: for the audio player, the center align attribute does not work; my HTML workaround was to place the player in a table with a center aligned"td."</p><br><br>
+
+                <td width="5%"></td>
+
             </td>
         </tr>
-    </tbody>
-</table>
-<p align="center">Note to self: for the audio player, the center align attribute does not work; my HTML workaround was to place the player in a table with a center aligned "td."</p><br><br>
-
-<td width="5%"></td>
-
-</td>
-</tr>
-</table>
-<!-- End of Table 1 -->
+    </table>
+    <!-- End of Table 1 -->
 </body>
 
 </html>
