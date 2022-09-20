@@ -1,35 +1,30 @@
-//Set global variable that would contain the position, velocity and the html element "ball"
-var velocity = 100; // controls speed
-var positionX = 0; // sets positionX's initial pos to 0
-var ball1 = document.getElementById("ball1"); // gets html element ball1
-/* var ball2 = document.getElementById("ball2"); // gets html element ball2
-var ball3 = document.getElementById("ball3"); // gets html element ball3
-var ball4 = document.getElementById("ball4"); // gets html element ball4
-var ball5 = document.getElementById("ball5"); // gets html element ball5
-var ball6 = document.getElementById("ball6"); // gets html element ball6
-var ball7 = document.getElementById("ball7"); // gets html element ball7 */
-var reverse = false; // added this var to reverse ball direction later
-// two fixed x-axis coordinates (you will use these variable in step 3)
+//Set global variable that contains position, velocity and the html element "ball"
+var velocity = 100; // step 2.1: sets velocity, controls speed
+var positionX = 0; // step 2.2: sets positionX's initial pos to 0
+var positionY = 0; // step 2.4: sets positionY's initial pos to 0
+var ball = document.getElementById("ball"); // gets html element ball
+var reverse = false; // step 2.3 added this var to reverse ball direction later
+// fixed x, y axes coordinates
 var Xmin = 0;
 var Xmax = 300;
+var Ymin = 0;
+var Ymax = 300;
 //write a function that can change the position of the html element "ball"
 function moveBall() {
     // reverse the direction of the ball
+    let vel = velocity
     if (reverse) {
-        velocity = -1.0 * velocity;
+        vel = -1.0 * vel;
     }
-    positionX = positionX + velocity;
+    positionX = positionX + vel;
     if (positionX >= Xmax || positionX <= 0) {
         reverse = !reverse;
     }
-    ball1.style.left = positionX + 'px';
-    /*ball2.style.left = positionX + 'px';
-    ball3.style.left = positionX + 'px';
-    ball4.style.left = positionX + 'px';
-    ball5.style.left = positionX + 'px';
-    ball6.style.left = positionX + 'px';
-    ball7.style.left = positionX + 'px';*/
+    ball.style.left = positionX + 'px';
+    // Y logic
+    positionY = positionY + vel;
+    if (positionY >= Ymax || positionY <= 0) {
+        reverse = !reverse;
+    }
+    ball.style.top = positionY + 'px';
 }
-
-// This calls the moveBall function every 100ms
-setInterval(moveBall, 100);
