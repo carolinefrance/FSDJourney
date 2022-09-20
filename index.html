@@ -1,238 +1,42 @@
 <!DOCTYPE html>
+<!-- This is the home page for FSDJourney. The purpose of this website is to chronicle my progress and reflect on my progress as an aspiring full-stack developer. The design will likely change as my skills progress and as I add more content. -->
+<!-- shortcut to create html 5 starting tags in VSCode: Ctrl Shift X, then start typing html to bring up dropdown menu to select html5 -->
+<!-- open a Google Chrome window and type about:blank in address bar, to drag an html file into the browser -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CJ France's JavaScript Ball Challenge</title>
-    <style>
-        .background-image {
-            /* IMG: CJ sits in lotus position in forest */
-            z-index: 1;
-            overflow: visible;
-            background-size: 960px, 550px;
-            background-image: url('lotus960x550.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: absolute;
-            top: 0;
-            left: 0;
-        }
-        
-        .chakra1 {
-            background-color: rgba(221, 8, 8, 0.47);
-        }
-        
-        .chakra2 {
-            background-color: rgba(228, 87, 12, 0.47);
-        }
-        
-        .chakra3 {
-            background-color: rgba(255, 234, 0, 0.47);
-        }
-        
-        .chakra4 {
-            background-color: rgba(12, 243, 8, 0.47);
-        }
-        
-        .chakra5 {
-            background-color: rgba(8, 153, 243, 0.429);
-        }
-        
-        .chakra6 {
-            background-color: rgba(73, 37, 255, 0.429);
-        }
-        
-        .chakra7 {
-            background-color: rgba(150, 38, 255, 0.429);
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 20% 60% 20%;
-        }
-        
-        .grid-item {
-            font-size: 30px;
-            color: white;
-            text-align: center;
-        }
-        
-        h1 {
-            font-family: "Georgia", Times, serif;
-            font-size: 24px;
-            font-style: bold, italic;
-            text-align: center;
-            color: white;
-        }
-        
-        body {
-            background-color: black;
-        }
-        
-        .JSballs {
-            min-width: 300px;
-            max-width: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>CJ France Studies Full Stack Development</title>
 </head>
 
 <body>
-    <div class="background-image container"><br>
-        <!-- header section-->
-        <h1>CJ France's JavaScript Ball Challenge<br>
-            <span class="chakra1">&nbsp;
-        C&nbsp;
-        </span><span class="chakra2">&nbsp;
-        H&nbsp;
-        </span><span class="chakra3">&nbsp;
-        A&nbsp;
-        </span><span class="chakra4">&nbsp;
-        K&nbsp;
-        </span><span class="chakra5">&nbsp;
-        R&nbsp;
-        </span><span class="chakra6">&nbsp;
-        A&nbsp;
-        </span><span class="chakra7">&nbsp;
-        S&nbsp;
-        </span></h1>
-        <!-- end header section, start main section -->
-        <div class="grid-container">
-            <!-- left content -->
-            <div class="grid-item"><br><span class="chakra7">&nbsp;
-        crown&nbsp;
-        </span><br><br><span class="chakra6">&nbsp;
-        third eye&nbsp;
-        </span><br><br><span class="chakra5">&nbsp;
-        throat&nbsp;
-        </span><br><br><span class="chakra4">&nbsp;
-        heart&nbsp;
-        </span><br><br><span class="chakra3">&nbsp;
-        solar plexus&nbsp;
-        </span><br><br><span class="chakra2">&nbsp;
-        sacral&nbsp;
-        </span><br><br><span class="chakra1">&nbsp;
-        root&nbsp;
-        </span><br><br><br></div>
-            <!----------------- center content -------------------->
-            <div class="grid-item">
-                <table>
-                    <tr>
-                        <td>
-                            <div id="ball7" style="z-index: 2; position: absolute; left: 540px; top: 112px; width: 100px;height: 100px; border-radius: 50%; background: rgba(150, 38, 255, 0.429);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball6" style="z-index: 3; position: absolute; left: 540px; top: 183px; width: 100px;height: 100px; border-radius: 50%; background: rgba(73, 37, 255, 0.429);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball5" style="z-index: 4; position: absolute; left: 540px; top: 250px; width: 100px;height: 100px; border-radius: 50%; background: rgba(8, 153, 243, 0.429);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball4" style="z-index: 5; position: absolute; left: 540px; top: 320px; width: 100px;height: 100px; border-radius: 50%; background: rgba(12, 243, 8, 0.47);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball3" style="z-index: 6; position: absolute; left: 540px; top: 395px; width: 100px; height: 100px; border-radius: 50%; background: rgba(255, 234, 0, 0.47);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball2" style="z-index: 7; position: absolute; left: 540px; top: 460px; width: 100px; height: 100px; border-radius: 50%; background: rgba(228, 87, 12, 0.47);"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div id="ball1" style="z-index: 8; position: absolute; left: 540px; top: 530px; width: 100px; height: 100px; border-radius: 50%; background: rgba(221, 8, 8, 0.47);"></div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <!-- end center content, start right content -->
-            <div class="grid-item"><br><span class="chakra7">&nbsp;
-        Sahasrara&nbsp;
-        </span><br><br><span class="chakra6">&nbsp;
-        Anja&nbsp;
-        </span><br><br><span class="chakra5">&nbsp;
-        Visuddha&nbsp;
-        </span><br><br><span class="chakra4">&nbsp;
-        Anahata&nbsp;
-        </span><br><br><span class="chakra3">&nbsp;
-        Manipura&nbsp;
-        </span><br><br><span class="chakra2">&nbsp;
-        Svadisthana&nbsp;
-        </span><br><br><span class="chakra1">&nbsp;
-        Muladhara&nbsp;
-        </span><br><br><br></div>
-            <!-- end right content-->
+    <div class="background-image container">
+        <div class="item header"><br>A Full Stack Developer's Journey<br></div>
+        <div class="item sidebar">
+            <br>
+            <a href="CJFranceTechJournal.html" alt="Tech Journal">Tech Journal</a>
+            <br><br>
+            <a href="CJFranceResources.html" alt="Resources">Resources</a>
+            <br><br>
+            <a href="CJFranceHTMLNotes.html" alt="Notes on HTML">Notes: HTML</a>
+            <br><br>
+            <a href="mod01.html" alt="Notes on Mod01">Notes: Mod01</a>
+            <br><br>
+            <a href="shapesExercise.html" alt="Shapes Exercise">Shapes Exercise</a>
+            <br><br>
+            <a href="https://www.youtube.com/watch?v=ANcmwTvCfsU" alt="My GitHub Tutorial">My GitHub Video</a>
+            <br><br>
+            <a href="https://carolinefrance.github.io/" alt="GitHub Profile">GitHub Profile</a>
+            <br><br>
+            <a href="https://www.linkedin.com/in/caroline-france-14a71152/" alt="LinkedIn">LinkedIn</a>
         </div>
-        <!-- end grid-container div -->
-    </div>
-    <!-- end background-image div -->
-</body>
-<script>
-    //Set global variable that contains position, velocity and the html element"ball"
-    var velocity = 100; // controls speed
-    var positionX = 0; // sets positionX's initial pos to 0
-    var positionY = 0; // sets positionY's initial pos to 0
-    var ball1 = document.getElementById('ball1'); //gets html ball elements
-    var ball2 = document.getElementById("ball2");
-    var ball3 = document.getElementById("ball3");
-    var ball4 = document.getElementById("ball4");
-    var ball5 = document.getElementById("ball5");
-    var ball6 = document.getElementById("ball6");
-    var ball7 = document.getElementById("ball7");
-    var reverse = false; // var will reverse ball direction later
-    // x, y axes of area in which balls move
-    var Xmin = 0;
-    var Xmax = 200;
-    var Ymin = 0;
-    var Ymax = 200;
-    // function gets balls by time
-    const myTimeout = setTimeout(ball1, 5000);
 
-    function myStopFunction() {
-        clearTimeout(myTimeout);
-    }
-    //function changes the position of the html ball
-    function moveBall() {
-        // reverse the direction of the ball
-        let vel = velocity
-        if (reverse) {
-            vel = -1.0 * vel;
-        }
-        positionX = positionX + vel;
-        if (positionX >= Xmax || positionX <= 0) {
-            reverse = !reverse;
-        }
-        ball1.style.left = positionX + 'px';
-        ball2.style.left = positionX + 'px';
-        ball3.style.left = positionX + 'px';
-        ball4.style.left = positionX + 'px';
-        ball5.style.left = positionX + 'px';
-        ball6.style.left = positionX + 'px';
-        ball7.style.left = positionX + 'px';
-        // Y logic
-        positionY = positionY + vel;
-        if (positionY >= Ymax || positionY <= 0) {
-            reverse = !reverse;
-        }
-        ball1.style.top = positionY + 'px';
-        ball2.style.top = positionY + 'px';
-        ball3.style.top = positionY + 'px';
-        ball4.style.top = positionY + 'px';
-        ball5.style.top = positionY + 'px';
-        ball6.style.top = positionY + 'px';
-        ball7.style.top = positionY + 'px';
-    }
-    setInterval(moveBall, 200);
-</script>
+        <div class="item content"><br>&nbsp;&nbsp;&nbsp;Hi, I'm CJ, and I've just begun my quest<br>&nbsp;&nbsp;&nbsp;to become a full-stack web developer.<br><br>&nbsp;&nbsp;&nbsp;Feel free to explore links to my<br>&nbsp;&nbsp;&nbsp;notes, projects, and resources.</div>
+        <div class="item footer"><br>Caroline J. France, aspiring full-stack developer, currently working as a college tutor in the U.S.</div>
+    </div>
+</body>
 
 </html>
