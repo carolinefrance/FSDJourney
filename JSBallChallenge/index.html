@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ France's JavaScript Ball Challenge</title>
+    <style>
+        .background-image {
+            /* IMG: CJ sits in lotus position in forest */
+            z-index: 1;
+            overflow: visible;
+            background-size: 960px, 550px;
+            background-image: url('lotus960x550.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .chakra1 {
+            background-color: rgba(221, 8, 8, 0.47);
+        }
+        
+        .chakra2 {
+            background-color: rgba(228, 87, 12, 0.47);
+        }
+        
+        .chakra3 {
+            background-color: rgba(255, 234, 0, 0.47);
+        }
+        
+        .chakra4 {
+            background-color: rgba(12, 243, 8, 0.47);
+        }
+        
+        .chakra5 {
+            background-color: rgba(8, 153, 243, 0.429);
+        }
+        
+        .chakra6 {
+            background-color: rgba(73, 37, 255, 0.429);
+        }
+        
+        .chakra7 {
+            background-color: rgba(150, 38, 255, 0.429);
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+        
+        .grid-item {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: "Georgia", Times, serif;
+            font-size: 24px;
+            font-style: bold, italic;
+            text-align: center;
+            color: white;
+        }
+        
+        #JSballs {
+            min-width: 300px;
+            max-width: auto;
+        }
+        
+        #ball1 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(221, 8, 8, 0.47);
+        }
+        
+        #ball2 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(228, 87, 12, 0.47);
+        }
+        
+        #ball3 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 234, 0, 0.47);
+        }
+        
+        #ball4 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(12, 243, 8, 0.47);
+        }
+        
+        #ball5 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(8, 153, 243, 0.429);
+        }
+        
+        #ball6 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(73, 37, 255, 0.429);
+        }
+        
+        #ball7 {
+            z-index: 5;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(150, 38, 255, 0.429);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-image container"><br>
+        <!-- header section-->
+        <h1>CJ France's JavaScript Ball Challenge<br>
+            <span class="chakra1">&nbsp;
+        C&nbsp;
+        </span><span class="chakra2">&nbsp;
+        H&nbsp;
+        </span><span class="chakra3">&nbsp;
+        A&nbsp;
+        </span><span class="chakra4">&nbsp;
+        K&nbsp;
+        </span><span class="chakra5">&nbsp;
+        R&nbsp;
+        </span><span class="chakra6">&nbsp;
+        A&nbsp;
+        </span><span class="chakra7">&nbsp;
+        S&nbsp;
+        </span></h1>
+        <!-- end header section, start main section -->
+        <div class="grid-container">
+            <!-- left content -->
+            <div class="grid-item"><br><span class="chakra7">&nbsp;
+        crown&nbsp;
+        </span><br><br><span class="chakra6">&nbsp;
+        third eye&nbsp;
+        </span><br><br><span class="chakra5">&nbsp;
+        throat&nbsp;
+        </span><br><br><span class="chakra4">&nbsp;
+        heart&nbsp;
+        </span><br><br><span class="chakra3">&nbsp;
+        solar plexus&nbsp;
+        </span><br><br><span class="chakra2">&nbsp;
+        sacral&nbsp;
+        </span><br><br><span class="chakra1">&nbsp;
+        root&nbsp;
+        </span><br><br><br></div>
+            <!-- center content -->
+            <div class="grid-item">
+                <!-- <div class="ball7"></div>
+                <div class="ball6"></div>
+                <div class="ball5"></div>
+                <div class="ball4"></div>
+                <div class="ball3"></div>
+                <div class="ball2"></div> -->
+                <div class="ball1"></div>
+            </div>
+            <!-- end center content, start right content -->
+            <div class="grid-item"><br><span class="chakra7">&nbsp;
+        Sahasrara&nbsp;
+        </span><br><br><span class="chakra6">&nbsp;
+        Anja&nbsp;
+        </span><br><br><span class="chakra5">&nbsp;
+        Visuddha&nbsp;
+        </span><br><br><span class="chakra4">&nbsp;
+        Anahata&nbsp;
+        </span><br><br><span class="chakra3">&nbsp;
+        Manipura&nbsp;
+        </span><br><br><span class="chakra2">&nbsp;
+        Svadisthana&nbsp;
+        </span><br><br><span class="chakra1">&nbsp;
+        Muladhara&nbsp;
+        </span><br><br><br></div>
+            <!-- end right content-->
+        </div>
+        <!-- end grid-container div -->
+    </div>
+    <!-- end background-image div -->
+</body>
+<script src="./ball.js"></script>
+
+</html>
