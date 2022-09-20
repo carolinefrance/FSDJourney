@@ -67,86 +67,13 @@
             color: white;
         }
         
-        #JSballs {
+        body {
+            background-color: black;
+        }
+        
+        .JSballs {
             min-width: 300px;
             max-width: auto;
-        }
-        
-        #ball1 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(221, 8, 8, 0.47);
-        }
-        
-        #ball2 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(228, 87, 12, 0.47);
-        }
-        
-        #ball3 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(255, 234, 0, 0.47);
-        }
-        
-        #ball4 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(12, 243, 8, 0.47);
-        }
-        
-        #ball5 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(8, 153, 243, 0.429);
-        }
-        
-        #ball6 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(73, 37, 255, 0.429);
-        }
-        
-        #ball7 {
-            z-index: 5;
-            position: absolute;
-            left: 0px;
-            top: 200px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: rgba(150, 38, 255, 0.429);
         }
     </style>
 </head>
@@ -190,13 +117,43 @@
         </span><br><br><br></div>
             <!----------------- center content -------------------->
             <div class="grid-item">
-                <!-- <div class="ball7"></div><br>
-                <div id="ball6"></div><br>
-                <div id="ball5"></div><br>
-                <div id="ball4"></div><br>
-                <div id="ball3"></div><br>
-                <div id="ball2"></div><br> -->
-                <div id="ball1"></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="ball7" style="z-index: 2; position: absolute; left: 540px; top: 112px; width: 100px;height: 100px; border-radius: 50%; background: rgba(150, 38, 255, 0.429);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball6" style="z-index: 3; position: absolute; left: 540px; top: 183px; width: 100px;height: 100px; border-radius: 50%; background: rgba(73, 37, 255, 0.429);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball5" style="z-index: 4; position: absolute; left: 540px; top: 250px; width: 100px;height: 100px; border-radius: 50%; background: rgba(8, 153, 243, 0.429);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball4" style="z-index: 5; position: absolute; left: 540px; top: 320px; width: 100px;height: 100px; border-radius: 50%; background: rgba(12, 243, 8, 0.47);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball3" style="z-index: 6; position: absolute; left: 540px; top: 395px; width: 100px; height: 100px; border-radius: 50%; background: rgba(255, 234, 0, 0.47);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball2" style="z-index: 7; position: absolute; left: 540px; top: 460px; width: 100px; height: 100px; border-radius: 50%; background: rgba(228, 87, 12, 0.47);"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ball1" style="z-index: 8; position: absolute; left: 540px; top: 530px; width: 100px; height: 100px; border-radius: 50%; background: rgba(221, 8, 8, 0.47);"></div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <!-- end center content, start right content -->
             <div class="grid-item"><br><span class="chakra7">&nbsp;
@@ -220,6 +177,62 @@
     </div>
     <!-- end background-image div -->
 </body>
-<script src="balls.js"></script>
+<script>
+    //Set global variable that contains position, velocity and the html element"ball"
+    var velocity = 100; // controls speed
+    var positionX = 0; // sets positionX's initial pos to 0
+    var positionY = 0; // sets positionY's initial pos to 0
+    var ball1 = document.getElementById('ball1'); //gets html ball elements
+    var ball2 = document.getElementById("ball2");
+    var ball3 = document.getElementById("ball3");
+    var ball4 = document.getElementById("ball4");
+    var ball5 = document.getElementById("ball5");
+    var ball6 = document.getElementById("ball6");
+    var ball7 = document.getElementById("ball7");
+    var reverse = false; // var will reverse ball direction later
+    // x, y axes of area in which balls move
+    var Xmin = 0;
+    var Xmax = 200;
+    var Ymin = 0;
+    var Ymax = 200;
+    // function gets balls by time
+    const myTimeout = setTimeout(ball1, 5000);
+
+    function myStopFunction() {
+        clearTimeout(myTimeout);
+    }
+    //function changes the position of the html ball
+    function moveBall() {
+        // reverse the direction of the ball
+        let vel = velocity
+        if (reverse) {
+            vel = -1.0 * vel;
+        }
+        positionX = positionX + vel;
+        if (positionX >= Xmax || positionX <= 0) {
+            reverse = !reverse;
+        }
+        ball1.style.left = positionX + 'px';
+        ball2.style.left = positionX + 'px';
+        ball3.style.left = positionX + 'px';
+        ball4.style.left = positionX + 'px';
+        ball5.style.left = positionX + 'px';
+        ball6.style.left = positionX + 'px';
+        ball7.style.left = positionX + 'px';
+        // Y logic
+        positionY = positionY + vel;
+        if (positionY >= Ymax || positionY <= 0) {
+            reverse = !reverse;
+        }
+        ball1.style.top = positionY + 'px';
+        ball2.style.top = positionY + 'px';
+        ball3.style.top = positionY + 'px';
+        ball4.style.top = positionY + 'px';
+        ball5.style.top = positionY + 'px';
+        ball6.style.top = positionY + 'px';
+        ball7.style.top = positionY + 'px';
+    }
+    setInterval(moveBall, 200);
+</script>
 
 </html>
